@@ -6,9 +6,13 @@ to prevent unwated system shutdowns for power saving, change the settings
 > Power Manager settings: Disable sleep and auto poweroff
 
 <ol type="a">
-  <li>CentOS 7/8: 
+  <li>CentOS 7/8:  
+  
+  ### Enable Camera, expand partition
+  Relax.
+  Reboot.
     
-  <li>Raspbian: 
+  <li>Raspbian:  
   
   ### Update raspi-config, enable camera, expand partition, confirm GPU ram is 128MB
   In the terminal, type:
