@@ -8,7 +8,11 @@ I will not be providing instructions for Windows due to compatibility issues
 
 ####    for CentOS or Raspbian, refer [here](script/0_RPi4.md)  
 
+### Jetson Nano
 
+####    refer [here]
+    coming soon.
+    
 ### Linux
 
 ####    for CentOS, refer [here]
