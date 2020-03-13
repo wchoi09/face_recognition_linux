@@ -73,11 +73,10 @@ cd $cwd
 Navigate to **`Downloads`** directory and run:
 <pre>
 cd Downloads
-bash 1_RPi4_<b>X</b>_install_dependencies.sh
+bash 1_RPi4_<b>X</b>_install_dependencies.sh   # Replace `X` with your OS
 bash 2_RPi4_download_opencv.sh
 bash 3_RPi4_build_opencv.sh
 </pre>
-Replace `X` with your OS  
 
 ### Step #3-1: [OPTIONAL] Clean the build directory
 Just in case you mess up during the build process from **Step #3-3** and want to restart build:
