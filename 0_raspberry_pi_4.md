@@ -157,7 +157,7 @@ cd ..
 cd opencv
 ```
 
-Apply Patch
+Apply Patch  
 URL: https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.1.1_Jetson.sh
 ```sh
 sed -i 's/include <Eigen\/Core>/include <eigen3\/Eigen\/Core>/g' modules/core/include/opencv2/core/private.hpp
