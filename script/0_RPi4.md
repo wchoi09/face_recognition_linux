@@ -1,10 +1,10 @@
 
 # Install OpenCV 4 on Raspberry Pi 4
 ## Download the script for installing dependencies needed for OpenCV installation
-### For CentOS 7/8
-[1_RPi4_CentOS_install_dependencies.sh](face_recognition_linux/script/1_RPi4_CentOS_install_dependencies.sh)
+For CentOS 7/8  
+[1_RPi4_CentOS_install_dependencies.sh](face_recognition_linux/script/1_RPi4_CentOS_install_dependencies.sh)  
 
-### For Raspbian
+For Raspbian  
 [1_RPi4_Raspbian_install_dependencies.sh](face_recognition_linux/script/1_RPi4_Raspbian_install_dependencies.sh)
 
 ## Download the script for downloading OpenCV
