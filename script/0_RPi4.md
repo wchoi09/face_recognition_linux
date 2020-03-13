@@ -79,7 +79,7 @@ bash 3_RPi4_build_opencv.sh
 </pre>
 Replace `X` with your OS  
 
-### [OPTIONAL] Step #3-1: Clean the build directory
+### Step #3-1: [OPTIONAL] Clean the build directory
 Just in case you mess up during the build process from **Step #3-3** and want to restart build:
 ```sh
 cd ..
