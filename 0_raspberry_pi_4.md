@@ -40,10 +40,15 @@ sudo apt install libv4l-dev v4l-utils
 sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 ```
 
+> X window (needs clean up)   # omit for now
+
+>    apt-get install libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev libinput-dev libxkbcommon-dev libsqlite3-dev libssl-dev libpng-dev libjpeg-dev libglib2.0-dev libraspberrypi-dev libcups2-dev libasound2-dev
+
 OpenGL libraries
 ```sh
 sudo apt install mesa-utils
 sudo apt install libegl1-mesa-dev libgbm-dev libgles2-mesa-dev
+sudo apt install libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev
 ```
 
 optimization libraries
