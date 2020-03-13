@@ -94,7 +94,7 @@ sudo ldconfig
 Done!
 
 ## Common Problems:
-Camera Doesn't load:
+Camera Doesn't load:  
  Solution 1:  
 ```sh
 sudo nano /boot/confgit.txt
@@ -113,4 +113,4 @@ is present. If not, append them yourselves.
  ```sh
  bcm2835-v4l2
 ```
-Reboot and try again.
+Reboot and try again.  
