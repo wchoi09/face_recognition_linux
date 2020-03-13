@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Specifying the OpenCV version
-cv_v="master"
-
-cwd=$(pwd)/opencv
-mkdir -p $cwd
-cd $cwd
-
 git clone https://github.com/opencv/opencv.git
 cd opencv
 git checkout $cvVersion
