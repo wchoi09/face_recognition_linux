@@ -72,7 +72,7 @@ cd $cwd
 ## Step #3: Installation
 Navigate to **Downloads** directory
 ```sh
-cd Downlaods
+cd Downloads
 ```
 
 ### Step #3-1: Run script for installing dependencies
