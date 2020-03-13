@@ -73,7 +73,7 @@ cd $cwd
 Navigate to **Downloads** directory and run:
 <pre>
 cd Downloads
-bash 1_RPi4_**X**_install_dependencies.sh
+bash 1_RPi4_<b>X</b>_install_dependencies.sh
 bash 2_RPi4_download_opencv.sh
 bash 3_RPi4_build_opencv.sh
 </pre>
