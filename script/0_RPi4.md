@@ -79,15 +79,15 @@ cd Downloads
 <ol type="a">
   <li>CentOS 7/8:  
     
-    ```sh
-    bash 1_RPi4_CentOS_install_dependencies.sh
-    ```
+  ```sh
+  bash 1_RPi4_CentOS_install_dependencies.sh
+  ```
     
   <li>Raspbian:  
     
-    ```sh
-    bash 1_RPi4_Raspbian_install_dependencies.sh
-    ```  
+  ```sh
+  bash 1_RPi4_Raspbian_install_dependencies.sh
+  ```  
 
 </ol>
 
@@ -106,8 +106,6 @@ Just in case you mess up during the build process from **Step #3-3** and want to
 ```sh
 cd ..
 sudo rm -rf build
-sudo mkdir build
-cd build
 ```
 
 ### Step #3-5: Install from build
