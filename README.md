@@ -10,7 +10,7 @@ I will not be providing instructions for Windows due to compatibility issues
 
 ### Jetson Nano
 
-####    refer [here]
+####    for Ubuntu, refer [here]
     coming soon.
     
 ### Linux
@@ -18,7 +18,7 @@ I will not be providing instructions for Windows due to compatibility issues
 ####    for CentOS, refer [here]
     coming soon.  
     
-####    for for Ubuntu 18.04, refer [here]
+####    for Ubuntu 18.04, refer [here]
     coming soon.  
     
 ## Face Recognition
