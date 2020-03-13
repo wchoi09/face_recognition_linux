@@ -11,7 +11,7 @@ I will not be providing instructions for Windows due to compatibility issues
 ### Jetson Nano
 
 ####    for Ubuntu, refer [here]
-    coming soon.
+    coming soon.  
     
 ### Linux
 
