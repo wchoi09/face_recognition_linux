@@ -72,23 +72,26 @@ sudo apt install libtbb2 libtbb-dev libdc1394-utils libdc1394-22-dev
 sudo apt install python3-dev python3.7-dev python3-pip
 ```
 
-## Step 3: Before installation
+## Step 3: Preparation
 ### Specify OpenCV Version
 In the terminal, type:
 ```sh
 cvVersion="$master"
 ```
+This indicates that we will be working off "master" branch of OpenCV git  
+  
 ### Save current working directory
 ```sh
 cwd=$(pwd)/opencv
 ```
-### creating a working directory
+
+### Create the working directory
 ```sh
 mkdir -p $cwd
 cd $cwd
 ```
 #### [OPTIONAL] If you mess up while building,
-Clean build directories
+Clean build directories to restart
 ```sh
 rm -rf opencv
 rm -rf opencv_contrib
@@ -137,8 +140,6 @@ pip3 install face_recognition imutils
 ```
 
 
-
-
 ## Step 5: Compile OpenCV 4 from source
 ### quit virtual environment and download from Github
 ```sh
@@ -153,29 +154,32 @@ git checkout $cvVersion
 cd ..
 cd opencv
 ```
+
 Apply Patch
 URL: https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.1.1_Jetson.sh
 ```sh
 sed -i 's/include <Eigen\/Core>/include <eigen3\/Eigen\/Core>/g' modules/core/include/opencv2/core/private.hpp
 ```
 
+Create a build directory
 ```
 mkdir build
 cd build
 ```
-Apply Patch (Could not find OpenBLAS include)
-# https://github.com/opencv/opencv/issues/9953
 
+<!--- Apply Patch (Could not find OpenBLAS include)
+# https://github.com/opencv/opencv/issues/9953
 # https://github.com/opencv/opencv/issues/12957
-sudo ln -s /usr/include/lapacke.h /usr/include/aarch64-linux-gnu
+sudo ln -s /usr/include/lapacke.h /usr/include/aarch64-linux-gnu 
 # opencv/cmake/OpenCVFindOpenBLAS.cmake
 # add: /usr/include/aarch64-linux-gnu to SET(Open_BLAS_INCLUDE_SEARCH_PATHS
-# add: /usr/lib/aarch64-linux-gnu to SET(Open_BLAS_LIB_SEARCH_PATHS
-workon OpenCV-“$cvVersion”-py3
+# add: /usr/lib/aarch64-linux-gnu to SET(Open_BLAS_LIB_SEARCH_PATHS --->
+
+workon OpenCV-"$cvVersion"
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
-# -D CMAKE_INSTALL_PREFIX=$cwd/installation/OpenCV-master \
+<!--- -D CMAKE_INSTALL_PREFIX=$cwd/installation/OpenCV-master \
 # https://www.learnopencv.com/install-opencv-4-on-raspberry-pi/
-# For system wide installation of OpenCV
+# For system wide installation of OpenCV --->
 -D CMAKE_INSTALL_PREFIX=/usr/local \
 -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
 -D WITH_GSTREAMER=ON \
@@ -188,8 +192,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_DOCS=OFF \
 -D INSTALL_C_EXAMPLES=ON \
 -D INSTALL_PYTHON_EXAMPLES=ON \
--D WITH_QT=OFF \
--D WITH_GTK=ON \
+-D WITH_QT=ON \
+-D WITH_GTK=OFF \
 -D WITH_OPENGL=ON \
 -D OPENCV_ENABLE_NONFREE=ON \
 -D WITH_XINE=ON \
@@ -197,7 +201,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_NEW_PYTHON_SUPPORT=ON \
 -D ENABLE_CXX11=ON \
 -D ENABLE_NEON=ON \
-# disable vfpv3 for RPi4 for now
+<!--- disable vfpv3 for RPi4 for now --->
 -D ENABLE_VFPV3=ON \
 -D OPENCV_SKIP_PYTHON_LOADER=ON \
 -D OPENCV_PYTHON3_INSTALL_PATH=/home/pi/.virtualenvs/OpenCV-master-py3/lib/python3.7/site-packages \
@@ -209,6 +213,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 make -j$(nproc)
 sudo make install
 sudo ldconfig
+<!---
 # reset swap
 # Sym-link your OpenCV 4 on the Raspberry Pi
 #cd /usr/local/lib/python3.7/site-packages/cv2/python-3.7
@@ -219,3 +224,7 @@ cd /home/pi/opencv/opencv/build/lib/python3/
 sudo mv cv2.cpython-37m-arm-linux-gnueabihf.so cv2.so
 cd ~/.virtualenvs/OpenCV-“$cvVersion”-py3/lib/python3.7/site-packages/
 ln -s /home/pi/opencv/opencv/build/lib/python3/cv2.so cv2.so
+--->
+
+
+Done!
