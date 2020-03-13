@@ -2,7 +2,7 @@
 # Install OpenCV 4 on Raspberry Pi 4
 ## Step #0: Setting Up
 **Note:** Some processes take a long time;  
-to prevent unwated system shutdowns for power saving, change the settings
+to prevent unwated system shutdowns per power saving mode, change the settings
 > Power Manager settings: Disable sleep and auto poweroff
 
 ### Update raspi-config, enable camera, expand partition, confirm GPU ram is 128MB
