@@ -181,9 +181,6 @@ sudo ln -s /usr/include/lapacke.h /usr/include/aarch64-linux-gnu
 ```sh
 workon OpenCV-"$cvVersion"
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
-<!--- -D CMAKE_INSTALL_PREFIX=$cwd/installation/OpenCV-master \
-# https://www.learnopencv.com/install-opencv-4-on-raspberry-pi/
-# For system wide installation of OpenCV --->
 -D CMAKE_INSTALL_PREFIX=/usr/local \
 -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
 -D WITH_GSTREAMER=ON \
@@ -205,7 +202,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_NEW_PYTHON_SUPPORT=ON \
 -D ENABLE_CXX11=ON \
 -D ENABLE_NEON=ON \
-<!--- disable vfpv3 for RPi4 for now --->
+<!---(disable vfpv3 for RPi4 for now)--->
 -D ENABLE_VFPV3=ON \
 -D OPENCV_SKIP_PYTHON_LOADER=ON \
 -D OPENCV_PYTHON3_INSTALL_PATH=/home/pi/.virtualenvs/OpenCV-master-py3/lib/python3.7/site-packages \
@@ -216,10 +213,11 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_PERF_TESTS=OFF ..
 make -j$(nproc)
 sudo make install
-sudo ldconfig```
+sudo ldconfig
+```
 
 <!---
-# reset swap
+[comment]: # (# reset swap
 # Sym-link your OpenCV 4 on the Raspberry Pi
 #cd /usr/local/lib/python3.7/site-packages/cv2/python-3.7
 #sudo mv cv2.cpython-37m-arm-linux-gnueabihf.so cv2.so
@@ -229,6 +227,7 @@ cd /home/pi/opencv/opencv/build/lib/python3/
 sudo mv cv2.cpython-37m-arm-linux-gnueabihf.so cv2.so
 cd ~/.virtualenvs/OpenCV-“$cvVersion”-py3/lib/python3.7/site-packages/
 ln -s /home/pi/opencv/opencv/build/lib/python3/cv2.so cv2.so
+)
 --->
 
 
