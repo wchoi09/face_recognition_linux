@@ -25,6 +25,7 @@ sudo apt dist-upgrade
 ```
 
 ## Step 2: Install Dependencies
+### Install the following dependencies
 
 Compiler Tools
 ```sh
