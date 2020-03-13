@@ -81,17 +81,17 @@ cvVersion="$master"
 ```
 This indicates that we will be working off "master" branch of OpenCV git  
   
-### Save current working directory
+###    Step 3-1: Save current working directory
 ```sh
 cwd=$(pwd)/opencv
 ```
 
-### Create the working directory
+###    Step 3-2: Create the working directory
 ```sh
 mkdir -p $cwd
 cd $cwd
 ```
-#### [OPTIONAL] If you mess up while building,
+###    Step 3-3: [OPTIONAL] If you mess up while building,
 Clean build directories to restart
 ```sh
 rm -rf opencv
@@ -100,7 +100,8 @@ rm -rf opencv_contrib
 
 ## Step 4: Virtual Environment Setup
 URL: https://www.pyimagesearch.com/2019/09/16/install-opencv-4-on-raspberry-pi-4-and-raspbian-buster/  
-Install virtualenv and virtualenvwrapper
+
+###   Step 4-1: Install virtualenv and virtualenvwrapper
 ```sh
 sudo pip3 install virtualenv virtualenvwrapper
 sudo pip3 install numpy (--upgrade)
@@ -125,7 +126,7 @@ Reload ~/.bashrc
 source ~/.bashrc
 ```
 
-Create Python3 Virtual Environment
+###    Step 4-2: Create Python3 Virtual Environment
 ```sh
 mkvirtualenv OpenCV-"$cvVersion" -p python3
 ```
