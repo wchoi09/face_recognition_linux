@@ -30,7 +30,7 @@ to prevent unwated system shutdowns for power saving, change the settings
 
 ## Step #1: Preparation (Download)
 ### Step #1-1: Script for installing dependencies needed for OpenCV installation
-**Note:** You do not, and should not need to download both scripts for Step #1-1  
+**Note:** You do not, and should not need to download both scripts for **Step #1-1**  
 Choose your operating system for the RPi4  
 <ol type="a">
   <li>CentOS 7/8:  
@@ -68,14 +68,6 @@ sudo mkdir -p $cwd
 cd $cwd
 ```
 
-### Step #2-4: [OPTIONAL] Clean the build directory
-Just in case you mess up during the build process and want to restart build:
-```sh
-cd ..
-sudo rm -rf build
-sudo mkdir build
-cd build
-```
 
 ## Step #3: Installation
 Navigate to /Downloads directory
@@ -109,7 +101,16 @@ bash 2_RPi4_download_opencv.sh
 bash 3_RPi4_build_opencv.sh
 ```
 
-### Step #3-4: Install from build
+### Step #3-4: [OPTIONAL] Clean the build directory
+Just in case you mess up during the build process from **Step #3-3** and want to restart build:
+```sh
+cd ..
+sudo rm -rf build
+sudo mkdir build
+cd build
+```
+
+### Step #3-5: Install from build
 ```sh
 sudo make install
 sudo ldconfig
