@@ -5,8 +5,10 @@
 Choose your operating system for the RPi4  
 <ol type="a">
   <li>CentOS 7/8:  
+    
 [1_RPi4_CentOS_install_dependencies.sh](face_recognition_linux/script/1_RPi4_CentOS_install_dependencies.sh)  </li>
   <li>Raspbian:  
+
 [1_RPi4_Raspbian_install_dependencies.sh](face_recognition_linux/script/1_RPi4_Raspbian_install_dependencies.sh)</li>
 </ol>
 
