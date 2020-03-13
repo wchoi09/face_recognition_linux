@@ -202,7 +202,9 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_NEW_PYTHON_SUPPORT=ON \
 -D ENABLE_CXX11=ON \
 -D ENABLE_NEON=ON \
-<!---(disable vfpv3 for RPi4 for now)--->
+```
+<!--- (disable vfpv3 for RPi4 for now) --->
+```sh
 -D ENABLE_VFPV3=ON \
 -D OPENCV_SKIP_PYTHON_LOADER=ON \
 -D OPENCV_PYTHON3_INSTALL_PATH=/home/pi/.virtualenvs/OpenCV-master-py3/lib/python3.7/site-packages \
@@ -217,7 +219,8 @@ sudo ldconfig
 ```
 
 <!---
-[comment]: # (# reset swap
+[comment]: # (
+# reset swap
 # Sym-link your OpenCV 4 on the Raspberry Pi
 #cd /usr/local/lib/python3.7/site-packages/cv2/python-3.7
 #sudo mv cv2.cpython-37m-arm-linux-gnueabihf.so cv2.so
