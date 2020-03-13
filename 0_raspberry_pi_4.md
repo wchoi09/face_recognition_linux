@@ -1,21 +1,22 @@
 # Install OpenCV 4 on Raspberry Pi 4 with Raspbian
 Prerequisite: Raspberry Pi 4 with Raspbian (root access) and a camera module
 ## Step 0: Setting Up
-**Note:** Some processes take a long time; to prevent system shutdown for power saving issues, change the settings  
->Power Manager settings: Disable sleep and auto poweroff
+**Note:** Some processes take a long time;  
+to prevent system shutdown for power saving issues, change the settings  
+> Power Manager settings: Disable sleep and auto poweroff
 
 ### Update kalipi-config, enable camera, expand partition, confirm GPU ram is 128MB
 In the terminal, type:
 ```sh
 sudo raspi-config
 ```
-"09 Update"
+"09 Update"  
 "05 Interfacing Options" -> "P1 Camera" (this enables camera and increases GPU ram to 128 from 64MB)  
 "07 Advanced Options" -> "A1 Expand Filesystem" (resize the installation partition)  
 "07 Advanced Options" -> "A3 Memory Split" (confirm GPU ram size is 128)  
 
-Reboot
-
+Reboot  
+  
 ## Step 1: Update OS
 ```sh
 sudo apt update
