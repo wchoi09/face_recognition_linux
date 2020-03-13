@@ -70,7 +70,7 @@ cd $cwd
 
 
 ## Step #3: Installation
-Navigate to `**Downloads**` directory and run:
+Navigate to **`Downloads`** directory and run:
 <pre>
 cd Downloads
 bash 1_RPi4_<b>X</b>_install_dependencies.sh
