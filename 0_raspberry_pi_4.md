@@ -202,9 +202,6 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_NEW_PYTHON_SUPPORT=ON \
 -D ENABLE_CXX11=ON \
 -D ENABLE_NEON=ON \
-```
-<!--- (disable vfpv3 for RPi4 for now) --->
-```sh
 -D ENABLE_VFPV3=ON \
 -D OPENCV_SKIP_PYTHON_LOADER=ON \
 -D OPENCV_PYTHON3_INSTALL_PATH=/home/pi/.virtualenvs/OpenCV-master-py3/lib/python3.7/site-packages \
@@ -216,6 +213,10 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 make -j$(nproc)
 sudo make install
 sudo ldconfig
+```
+On RPi4, if you encounter error while cmake, you might have to disable vfpv3 for RPi4 for now by 
+```sh
+-D ENABLE_VFPV3=OFF \
 ```
 
 <!---
