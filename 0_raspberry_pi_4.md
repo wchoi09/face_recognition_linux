@@ -41,8 +41,7 @@ sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 ```
 
 > X window (needs clean up)   # omit for now
-
->    apt-get install libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev libinput-dev libxkbcommon-dev libsqlite3-dev libssl-dev libpng-dev libjpeg-dev libglib2.0-dev libraspberrypi-dev libcups2-dev libasound2-dev
+>    sudo apt install libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev libinput-dev libxkbcommon-dev libsqlite3-dev libssl-dev libpng-dev libjpeg-dev libglib2.0-dev libraspberrypi-dev libcups2-dev libasound2-dev  
 
 OpenGL libraries
 ```sh
