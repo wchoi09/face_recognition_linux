@@ -7,8 +7,8 @@ I will not be providing instructions for Windows due to compatibility issues
 ### Raspberry Pi 4 
 
 ####    for CentOS or Raspbian, refer [here](face_recognition_linux/script/0_RPi4.md)  
-    coming soon.  
-    
+
+
 ### Linux
 
 ####    for CentOS, refer [here]
