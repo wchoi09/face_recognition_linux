@@ -175,6 +175,8 @@ sudo ln -s /usr/include/lapacke.h /usr/include/aarch64-linux-gnu
 # add: /usr/include/aarch64-linux-gnu to SET(Open_BLAS_INCLUDE_SEARCH_PATHS
 # add: /usr/lib/aarch64-linux-gnu to SET(Open_BLAS_LIB_SEARCH_PATHS --->
 
+## Step 6: Compile and install
+```sh
 workon OpenCV-"$cvVersion"
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 <!--- -D CMAKE_INSTALL_PREFIX=$cwd/installation/OpenCV-master \
@@ -212,7 +214,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_PERF_TESTS=OFF ..
 make -j$(nproc)
 sudo make install
-sudo ldconfig
+sudo ldconfig```
+
 <!---
 # reset swap
 # Sym-link your OpenCV 4 on the Raspberry Pi
