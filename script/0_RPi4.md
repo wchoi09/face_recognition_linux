@@ -8,12 +8,12 @@ to prevent unwated system shutdowns per power saving mode, change the settings
 ### Update raspi-config, enable camera, expand partition, confirm GPU ram is 128MB
 
 <ol type="a">
-  <li>CentOS 7/8:  
+  <li><b>CentOS 7/8:</b>  
   
   Relax.  
   Reboot.
     
-  <li>Raspbian:  
+  <li><b>Raspbian:</b>  
   
   In the terminal, type:
   ```sh
@@ -33,10 +33,10 @@ to prevent unwated system shutdowns per power saving mode, change the settings
 **Note:** You do not, and should not need to download both scripts for **Step #1-1**  
 Choose your operating system for the RPi4  
 <ol type="a">
-  <li>CentOS 7/8:  
+  <li><b>CentOS 7/8:</b>  
     
 [1_RPi4_CentOS_install_dependencies.sh](1_RPi4_CentOS_install_dependencies.sh)  </li>
-  <li>Raspbian:  
+  <li><b>Raspbian:</b>  
 
 [1_RPi4_Raspbian_install_dependencies.sh](1_RPi4_Raspbian_install_dependencies.sh)</li>
 </ol>
@@ -77,13 +77,13 @@ cd Downloads
 
 ### Step #3-1: Run script for installing dependencies
 <ol type="a">
-  <li>CentOS 7/8:  
+  <li><b>CentOS 7/8:</b>  
     
   ```sh
   bash 1_RPi4_CentOS_install_dependencies.sh
   ```
     
-  <li>Raspbian:  
+  <li><b>Raspbian:</b>  
     
   ```sh
   bash 1_RPi4_Raspbian_install_dependencies.sh
