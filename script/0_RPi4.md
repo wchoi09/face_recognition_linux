@@ -70,7 +70,7 @@ cd $cwd
 
 
 ## Step #3: Installation
-Navigate to /Downloads directory
+Navigate to **Downloads** directory
 ```sh
 cd Downlaods
 ```
