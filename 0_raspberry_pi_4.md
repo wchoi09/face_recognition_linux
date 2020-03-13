@@ -10,9 +10,9 @@ In the terminal, type:
 sudo raspi-config
 ```
 "09 Update"
-"05 Interfacing Options" -> "P1 Camera" (this enables camera and increases GPU ram to 128 from 64MB)
-"07 Advanced Options" -> "A1 Expand Filesystem" (resize the installation partition)
-"A3 Memory Split" (confirm GPU ram size is 128)
+"05 Interfacing Options" -> "P1 Camera" (this enables camera and increases GPU ram to 128 from 64MB)  
+"07 Advanced Options" -> "A1 Expand Filesystem" (resize the installation partition)  
+"07 Advanced Options" -> "A3 Memory Split" (confirm GPU ram size is 128)  
 
 Reboot
 
