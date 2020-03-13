@@ -43,6 +43,7 @@ sudo apt install python3-dev python3.7-dev python3-pip
 
 # Install virtualenv and virtualenvwrapper
 sudo pip3 install virtualenv virtualenvwrapper
+sudo pip3 install --upgrade numpy 
 nano ~/.bashrc
 
 # append the following lines to the bottom of the file:
