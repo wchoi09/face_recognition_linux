@@ -38,3 +38,34 @@ sudo apt install python3-dev python3.7-dev python3-pip
 
 
 
+
+
+
+# Install virtualenv and virtualenvwrapper
+sudo pip3 install virtualenv virtualenvwrapper
+nano ~/.bashrc
+
+# append the following lines to the bottom of the file:
+#    # virtualenv and virtualenvwrapper
+#    export WORKON_HOME=$HOME/.virtualenvs
+#    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+#    source /usr/local/bin/virtualenvwrapper.sh
+
+# Save and exit via ctrl + x, y, enter.
+# Reload ~/.bashrc
+source ~/.bashrc
+
+# Create Python 3 virtual environment
+mkvirtualenv OpenCV-"$cv_v" -p python3
+# Note: Python 2.7 will reach end of its life on January 1st, 2020 so I do not recommend using Python 2.7.
+# OpenCV-master is the name of our virtual environment, using Python3
+
+# install the PiCamera API and other libraries
+pip3 install "picamera[array]"
+pip3 install cmake cython
+pip3 install numpy scipy matplotlib scikit-image scikit-learn ipython dlib
+pip3 install face_recognition imutils
+
+
+
+
