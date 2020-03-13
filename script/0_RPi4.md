@@ -93,3 +93,24 @@ sudo ldconfig
 
 Done!
 
+## Common Problems:
+Camera Doesn't load:
+ Solution 1:  
+```sh
+sudo nano /boot/confgit.txt
+```
+At the end of the file, see if
+```sh
+start_x=1
+gpu_mem=128
+```
+is present. If not, append them yourselves.  
+ Solution 2:
+ ```sh
+ sudo nano /etc/modules
+ ```
+ At the end of the file, add
+ ```sh
+ bcm2835-v4l2
+```
+Reboot and try again.
