@@ -10,14 +10,15 @@ In the terminal, type:
 ```sh
 sudo raspi-config
 ```
-"09 Update"  
-"05 Interfacing Options" -> "P1 Camera" (this enables camera and increases GPU ram to 128 from 64MB)  
-"07 Advanced Options" -> "A1 Expand Filesystem" (resize the installation partition)  
-"07 Advanced Options" -> "A3 Memory Split" (confirm GPU ram size is 128)  
+> "09 Update"  
+> "05 Interfacing Options" -> "P1 Camera" (this enables camera and increases GPU ram to 128 from 64MB)  
+> "07 Advanced Options" -> "A1 Expand Filesystem" (resize the installation partition)  
+> "07 Advanced Options" -> "A3 Memory Split" (confirm GPU ram size is 128)  
 
 Reboot  
   
 ## Step 1: Update OS
+To update, type:  
 ```sh
 sudo apt update
 sudo apt dist-upgrade
@@ -39,14 +40,10 @@ sudo apt install libv4l-dev v4l-utils
 sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 ```
 
-Install X windows libraries and OpenGL libraries
+OpenGL libraries
 ```sh
 sudo apt install mesa-utils
-sudo apt install libxmu-dev libxi-dev
-sudo apt install libglu1-mesa libglu1-mesa-dev
-sudo apt install libgles2-mesa libgles2-mesa-dev
-sudo apt install libgl1-mesa-dev libgl1-mesa-dri
-sudo apt install libgtkgl2.0-1 libgtkgl2.0-dev libgtkglext1-dev
+sudo apt install libegl1-mesa-dev libgbm-dev libgles2-mesa-dev
 ```
 
 optimization libraries
@@ -56,10 +53,9 @@ dev
 sudo apt install freeglut3 freeglut3-dev liblapack-doc libblas-dev
 ```
 
-Choose one from libgtk2.0-dev / libgtk-3-dev / libqt4-dev / libqt5-dev  
-for GUI support
+Choose one from **libgtk2.0-dev / libgtk-3-dev / libqt4-dev / libqt5-dev** for GUI support  
 ```sh
-sudo apt install libx11-dev libqt5-dev
+sudo apt install libqt5-dev   # I chose libqt5-dev
 ```
 
 Extra Libraries  
