@@ -5,7 +5,7 @@ Prerequisite: Raspberry Pi 4 with Raspbian (root access) and a camera module
 to prevent system shutdown for power saving issues, change the settings  
 > Power Manager settings: Disable sleep and auto poweroff
 
-### Update kalipi-config, enable camera, expand partition, confirm GPU ram is 128MB
+### Update raspi-config, enable camera, expand partition, confirm GPU ram is 128MB
 In the terminal, type:
 ```sh
 sudo raspi-config
