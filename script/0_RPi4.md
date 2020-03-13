@@ -70,45 +70,23 @@ cd $cwd
 
 
 ## Step #3: Installation
-Navigate to **Downloads** directory
-```sh
+Navigate to **Downloads** directory and run:
+<pre>
 cd Downloads
-```
-
-### Step #3-1: Run script for installing dependencies
-<ol type="a">
-  <li><b>CentOS 7/8:</b>  
-    
-  ```sh
-  bash 1_RPi4_CentOS_install_dependencies.sh
-  ```
-    
-  <li><b>Raspbian:</b>  
-    
-  ```sh
-  bash 1_RPi4_Raspbian_install_dependencies.sh
-  ```  
-
-</ol>
-
-### Step #3-2: Run script for downloading OpenCV
-```sh
+bash 1_RPi4_**X**_install_dependencies.sh
 bash 2_RPi4_download_opencv.sh
-```
-
-### Step #3-3: Run script for building OpenCV
-```sh
 bash 3_RPi4_build_opencv.sh
-```
+</pre>
+Replace `X` with your OS  
 
-### Step #3-4: [OPTIONAL] Clean the build directory
+### Step #3-1: [OPTIONAL] Clean the build directory
 Just in case you mess up during the build process from **Step #3-3** and want to restart build:
 ```sh
 cd ..
 sudo rm -rf build
 ```
 
-### Step #3-5: Install from build
+### Step #3-2: Install from build
 ```sh
 sudo make install
 sudo ldconfig
