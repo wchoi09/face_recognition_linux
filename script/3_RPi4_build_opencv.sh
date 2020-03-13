@@ -1,13 +1,6 @@
 #!/bin/bash
 
-# Specifying the OpenCV version
-cv_v="master"
-
-cwd=$(pwd)/opencv
-
-cd $cwd
-
-mkdir build
+sudo mkdir build
 cd build
 
 workon OpenCV-"$cv_v"
