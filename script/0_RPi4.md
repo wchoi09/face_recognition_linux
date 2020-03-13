@@ -9,7 +9,7 @@ to prevent unwated system shutdowns for power saving, change the settings
   <li>CentOS 7/8:  
   
   ### Enable Camera, expand partition
-  Relax.
+  Relax.  
   Reboot.
     
   <li>Raspbian:  
