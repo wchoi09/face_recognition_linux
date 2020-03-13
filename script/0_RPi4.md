@@ -2,7 +2,7 @@
 # Install OpenCV 4 on Raspberry Pi 4
 ## Step 1: Preparation
 ### Step 1-1: Script for installing dependencies needed for OpenCV installation
-**Note:** You do not, and should not need to download both scripts for step 1-1  
+**Note:** You do not, and should not need to download both scripts for Step #1-1  
 Choose your operating system for the RPi4  
 <ol type="a">
   <li>CentOS 7/8:  
