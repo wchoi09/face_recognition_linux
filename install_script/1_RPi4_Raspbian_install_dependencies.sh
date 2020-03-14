@@ -72,6 +72,6 @@ pip3 install cmake cython
 pip3 install numpy scipy matplotlib scikit-image scikit-learn ipython dlib
 pip3 install face_recognition imutils
 
-
+deactivate
 
 
