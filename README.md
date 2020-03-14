@@ -36,21 +36,21 @@ There are 5 files (3 python scripts, 1 pickle, 1 xml).
 Along the files, you should create a directory called `dataset`  
 In the `dataset` directory, we will create another directory. This time, you can name it freely, just take a note of it.  
 In this example, I used my initial, **WC**  
-```sh
+<pre>
 cd pi_face_recognition
-sudo mkdir -p dataset/WC
-```
+sudo mkdir -p dataset/<b>WC</b>
+</pre>
 _Change **WC** to the name you gave above_
 
 ### Step #2: Build Face Dataset
 This is where you will build your own dataset  
-Once a desired face is detected (there will be a rectangular box around it), you will press `k` to save it to `dataset/WC`  
+Once a desired face is detected (there will be a rectangular box around it), you will press `k` to save it to `dataset/**WC**`  
 Once done, press `q` to exit  
 More the higher accuracy of recognition  
 Try different angles, different facial expressions, etc...  
-```sh
-python3 0_build_face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/WC
-```
+<pre>
+python3 0_build_face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/<b>WC</b>
+</pre>
 
 ### Step #3: Encode Faces
 Encoding the dataset(faces) gathered above to a pickle file to be used for recognition.  
