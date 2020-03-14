@@ -5,16 +5,27 @@
 to prevent unwated system shutdowns per power saving mode, change the settings
 > Power Manager settings: Disable sleep and auto poweroff
 
-### Update raspi-config, enable camera, expand partition, confirm GPU ram is 128MB
+### Enable camera, expand partition, confirm GPU ram is 128MB
 
 <ol type="a">
   <li><b>CentOS 7/8:</b>  
   
-  Relax.  
+  Enable camera (seting GPU ram to 128MB)  
+  ```sh
+  sed -i '$a\start_x=1' /boot/config.txt
+  sed -i '$a\gpu_mem=128' /boot/config.txt
+  ```
+  
+  If you want to automatically resize your / partition, just type the following (as root user):  
+  In the terminal, type:
+  ```sh
+  /usr/bin/rootfs-expand
+  ```
   Reboot.
     
   <li><b>Raspbian:</b>  
   
+  Raspbian comes with raspi-config  
   In the terminal, type:
   ```sh
   sudo raspi-config
