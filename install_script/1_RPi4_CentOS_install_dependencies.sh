@@ -69,7 +69,7 @@ source ~/.bashrc
 
 # Create Python 3 virtual environment
 mkvirtualenv OpenCV-"$cv_v" -p python3
-workon  OpenCV-"$cv_v"
+workon OpenCV-"$cv_v"
 
 # install the PiCamera API and other libraries
 pip3 install "picamera[array]"
