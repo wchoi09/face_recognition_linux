@@ -1,6 +1,9 @@
 # face_recognition_linux
 
-<details><summary><h2>Install OpenCV 4</h2></summary>
+<details>
+ <summary><h2>Install OpenCV 4</h2></summary>
+ 
+
 Instructions on how to set up a system for face recognition on Linux  
 I will not be providing instructions for Windows due to compatibility issues  
 
@@ -21,10 +24,11 @@ I will not be providing instructions for Windows due to compatibility issues
 ####    for Ubuntu 18.04, refer [here]
     coming soon.  
     
-</p>
 </details>
 
-## Live Face Recognition
+<details>
+ <summary><h2>Live Face Recognition</h2></summary>
+ 
 
 ###    Resources
 [OpenCV Face Recognition](https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/)
@@ -74,4 +78,7 @@ Once face is detected and recognized, a rectangular box will appear around the f
 `WC` if recognized.  
 
 Done!  
+</details>
+
+
 
