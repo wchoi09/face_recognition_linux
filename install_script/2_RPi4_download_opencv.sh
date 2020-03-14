@@ -1,6 +1,5 @@
 #!/bin/bash
 
-deactivate
 git clone https://github.com/opencv/opencv.git
 cd opencv
 git checkout $cvVersion
