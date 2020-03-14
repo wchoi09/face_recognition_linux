@@ -43,8 +43,8 @@ sudo apt install python3-dev python3.7-dev python3-pip
 
 # Install virtualenv and virtualenvwrapper
 sudo pip3 install virtualenv virtualenvwrapper
-sudo pip3 install --upgrade numpy 
-nano ~/.bashrc
+sudo pip3 install --upgrade numpy
+
 
 # append the following lines to the bottom of the file:
 #    # virtualenv and virtualenvwrapper
@@ -52,7 +52,11 @@ nano ~/.bashrc
 #    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 #    source /usr/local/bin/virtualenvwrapper.sh
 
-# Save and exit via ctrl + x, y, enter.
+sed -i '$a\# virtualenv and virtualenvwrapper' ~/.bashrc
+sed -i '$a\export WORKON_HOME=$HOME/.virtualenvs' ~/.bashrc
+sed -i '$a\export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3' ~/.bashrc
+sed -i '$a\source /usr/local/bin/virtualenvwrapper.sh' ~/.bashrc
+
 # Reload ~/.bashrc
 source ~/.bashrc
 
