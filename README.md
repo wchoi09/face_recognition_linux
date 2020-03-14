@@ -66,7 +66,7 @@ python3 1_encode_faces.py --dataset dataset --encodings encodings.pickle --detec
 ```sh
 python3 2_pi_face_recognition.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle
 ```
-Once face is detected and recognized, a rectangular box will appear around the face with  
+Once face is detected and recognized, a rectangular box will appear around the face and output:  
 `unknown` if unrecognized,  
 `WC` if recognized.  
 
