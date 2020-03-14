@@ -6,7 +6,7 @@ I will not be providing instructions for Windows due to compatibility issues
 
 ### Raspberry Pi 4 
 
-####    for CentOS or Raspbian, refer [here](script/0_RPi4.md)  
+####    for CentOS or Raspbian, refer [here](install_script/0_RPi4.md)  
 
 ### Jetson Nano
 
