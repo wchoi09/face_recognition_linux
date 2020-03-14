@@ -44,10 +44,9 @@ _Change **WC** to the name you gave above_
 
 ### Step #2: Build Face Dataset
 This is where you will build your own dataset  
-Once a desired face is detected (there will be a rectangular box around it), you will press `k` to save it to <addr>dataset/<b>WC</b></addr>  
-
+Once a desired face is detected (there will be a rectangular box around it), you will press `k` to save it to `dataset/WC`  
 Once done, press `q` to exit  
-More the higher accuracy of recognition  
+More the higher recognition accuracy  
 Try different angles, different facial expressions, etc...  
 <pre>
 python3 0_build_face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/<b>WC</b>
