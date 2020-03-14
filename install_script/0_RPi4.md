@@ -90,7 +90,7 @@ bash 3_RPi4_build_opencv.sh
 </pre>
 
 ### Step #3-1: [OPTIONAL] Clean the build directory
-Just in case you mess up during the build process from **Step #3-3** and want to restart build:
+Just in case you mess up during the build process, clean build:
 ```sh
 cd ..
 sudo rm -rf build
