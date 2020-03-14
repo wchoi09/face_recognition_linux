@@ -9,6 +9,7 @@ to prevent unwated system shutdowns per power saving mode, change the settings
 
 <ol type="a">
   <li><b>CentOS 7/8: (Only CentOS 7 is available for RPi at the moment)</b>  
+    
   Enable camera (seting GPU ram to 128MB)  
   ```sh
   sed -i '$a\start_x=1' /boot/config.txt
