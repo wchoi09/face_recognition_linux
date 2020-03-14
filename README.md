@@ -21,7 +21,11 @@ I will not be providing instructions for Windows due to compatibility issues
 ####    for Ubuntu 18.04, refer [here]
     coming soon.  
     
-## Face Recognition
+## Live Face Recognition
+
+###    Resources
+[OpenCV Face Recognition](https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/)
+
 **Note:** I tested this only on RPi4  
 This features building our own facial dataset to detect and recognize our face in a live video stream on RPi4  
 Before we run the commands below, make sure the virtual environment is activated!  
