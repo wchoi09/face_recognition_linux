@@ -1,5 +1,5 @@
 # USAGE
-# python3 pi_face_recognition.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle
+# python3 2_pi_face_recognition.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle
 
 # import the necessary packages
 from imutils.video import VideoStream
