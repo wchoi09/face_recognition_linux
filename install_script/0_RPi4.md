@@ -5,16 +5,27 @@
 to prevent unwated system shutdowns per power saving mode, change the settings
 > Power Manager settings: Disable sleep and auto poweroff
 
-### Update raspi-config, enable camera, expand partition, confirm GPU ram is 128MB
+### Enable camera, expand partition, confirm GPU ram is 128MB
 
 <ol type="a">
-  <li><b>CentOS 7/8:</b>  
+  <li><b>CentOS 7/8: (Only CentOS 7 is available for RPi at the moment)</b>  
+    
+  Enable camera (seting GPU ram to 128MB)  
+  ```sh
+  sed -i '$a\start_x=1' /boot/config.txt
+  sed -i '$a\gpu_mem=128' /boot/config.txt
+  ```
   
-  Relax.  
+  If you want to automatically resize your / partition, just type the following (as root user):  
+  In the terminal, type:
+  ```sh
+  /usr/bin/rootfs-expand
+  ```
   Reboot.
     
   <li><b>Raspbian:</b>  
   
+  Raspbian comes with raspi-config  
   In the terminal, type:
   ```sh
   sudo raspi-config
@@ -79,7 +90,7 @@ bash 3_RPi4_build_opencv.sh
 </pre>
 
 ### Step #3-1: [OPTIONAL] Clean the build directory
-Just in case you mess up during the build process from **Step #3-3** and want to restart build:
+Just in case you mess up during the build process, clean build:
 ```sh
 cd ..
 sudo rm -rf build
