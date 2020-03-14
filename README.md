@@ -1,6 +1,6 @@
 # face_recognition_linux
 
-## Install OpenCV 4
+<details><summary><h2>Install OpenCV 4</h2></summary>
 Instructions on how to set up a system for face recognition on Linux  
 I will not be providing instructions for Windows due to compatibility issues  
 
@@ -21,6 +21,9 @@ I will not be providing instructions for Windows due to compatibility issues
 ####    for Ubuntu 18.04, refer [here]
     coming soon.  
     
+</p>
+</details>
+
 ## Live Face Recognition
 
 ###    Resources
