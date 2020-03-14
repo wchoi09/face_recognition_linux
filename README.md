@@ -1,4 +1,4 @@
-# face_recognition_linux (test)
+# face_recognition_linux
 Instructions on how to set up a system for face recognition on Linux  
 I will not be providing instructions for Windows due to compatibility issues  
 
