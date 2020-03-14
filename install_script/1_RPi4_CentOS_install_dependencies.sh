@@ -46,7 +46,7 @@ sudo dnf -y install qt5-qtbase-devel
 # Extra libraries
 sudo dnf -y install boost boost-thread boost-devel
 sudo dnf -y install libtiff-devel libdc1394-devel tbb-devel 
-sudo dnf -y install python36 python36-devel python36-pip python36-numpy
+sudo dnf -y install python36 python36-devel python36-pip
 
 
 
