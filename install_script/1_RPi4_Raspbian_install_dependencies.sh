@@ -63,6 +63,7 @@ source ~/.bashrc
 
 # Create Python 3 virtual environment
 mkvirtualenv OpenCV-"$cv_v" -p python3
+workon OpenCV-"$cv_v"
 # Note: Python 2.7 will reach end of its life on January 1st, 2020 so I do not recommend using Python 2.7.
 # OpenCV-master is the name of our virtual environment, using Python3
 
