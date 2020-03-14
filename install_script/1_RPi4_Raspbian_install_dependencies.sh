@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Update System
 sudo apt update
 sudo apt dist-upgrade
 
